@@ -1,0 +1,9 @@
+textblob
+scikit-learn
+pandas
+ast
+numpy
+json
+git
+pytorch
+pickle
