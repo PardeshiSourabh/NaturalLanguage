@@ -119,32 +119,8 @@ for data in range(X.shape[0]):
             contexts.append(subtitle['context'])
 ```
 
-Create a single Dataframe with all data
 
-
-```python
-df = pd.DataFrame({"context":contexts, "question": questions, "answer_start": starts_at, "text": answer_texts})
-```
-
-
-```python
-df.to_csv("data/train.csv", index = None)
-```
-
-
-```python
-df.shape
-```
-
-
-
-
-    (87599, 4)
-
-
-
-
-## Using InferSent for creating embeddings and dumping data dictionary to pickle
+## Using InferSent for creating embeddings
 
 
 ```python
@@ -464,19 +440,6 @@ X_train.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -597,19 +560,6 @@ predicted.head(10)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -917,19 +867,6 @@ data.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1074,19 +1011,6 @@ train.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
